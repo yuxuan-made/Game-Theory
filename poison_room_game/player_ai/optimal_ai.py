@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import random
 
-def bot(rooms_remaining, poisonous_room_remaining, antidote_remaining):
+def bot(rooms_remaining, poisonous_room_remaining, antidote_remaining, **kwargs):
     ai = dynamic_programming_bot(rooms_remaining, poisonous_room_remaining, antidote_remaining)
     return ai.decision()
 
